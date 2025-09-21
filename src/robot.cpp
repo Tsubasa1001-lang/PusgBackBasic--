@@ -1,10 +1,7 @@
 #include "robot.hpp"
 
 // 馬達初始化
-pros::Motor LeftFront(-1, pros::v5::MotorGears::blue); // 左前方馬達
-pros::Motor LeftBack(-3, pros::v5::MotorGears::blue); // 左後方馬達
-pros::Motor RightFront(2, pros::v5::MotorGears::blue); // 右前方馬達
-pros::Motor RightBack(4, pros::v5::MotorGears::blue); // 右後方馬達
+
 pros::Motor FrontIntakeUpper(-7, pros::v5::MotorGears::blue); // 前方上層 intake 馬達
 pros::Motor FrontIntakeLower(-16, pros::v5::MotorGears::blue); // 前方下層 intake 馬達
 pros::Motor MiddleIntakeUpper(4, pros::v5::MotorGears::green); // 中間上層 intake 馬達
@@ -14,8 +11,7 @@ pros::Motor Conveyor(18, pros::v5::MotorGears::green);
 // 馬達群組初始化
 pros::MotorGroup LeftGroup({-9, -20}, pros::v5::MotorGears::blue, pros::v5::MotorUnits::degrees); // 左側馬達組設定
 pros::MotorGroup RightGroup({19, 10}, pros::v5::MotorGears::blue, pros::v5::MotorUnits::degrees); // 右側馬達組設定
-pros::MotorGroup BackIntake({12, -13, -14}, pros::v5::MotorGears::blue,
-                            pros::v5::MotorUnits::degrees); // 左前方馬達群組
+
 // 底盤配置
 lemlib::Drivetrain drivetrain(&LeftGroup, // left motor group
                               &RightGroup, // right motor group

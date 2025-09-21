@@ -4,12 +4,8 @@
 #include "main.h"
 #include "lemLib/chassis/chassis.hpp"
 // 馬達宣告
-extern pros::Motor Intake;
+
 extern pros::Motor Conveyor;
-extern pros::Motor LeftFront; // 左前方馬達
-extern pros::Motor LeftBack; // 左後方馬達
-extern pros::Motor RightFront; // 右前方馬達
-extern pros::Motor RightBack; // 右後方馬達
 extern pros::Motor FrontIntakeUpper; // 前方 intake 馬達
 extern pros::Motor FrontIntakeLower; // 前方下層 intake 馬達
 extern pros::Motor MiddleIntakeUpper; // 中間上層 intake 馬達
@@ -18,7 +14,7 @@ extern pros::Motor MiddleIntakeLower; // 中間下層 intake 馬達
 // 馬達群組
 extern pros::MotorGroup LeftGroup;
 extern pros::MotorGroup RightGroup;
-extern pros::MotorGroup BackIntake;
+
 // 底盤配置
 extern lemlib::Chassis chassis;
 extern lemlib::ExpoDriveCurve expoCurve;

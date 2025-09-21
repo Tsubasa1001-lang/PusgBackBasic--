@@ -4,7 +4,7 @@
 // L1模式：吸入儲存槽
 void intake_mode_storage() {
     FrontIntakeUpper.move(80);    // 前方上層正轉
-    FrontIntakeLower.move(80);    // 前方下層正轉
+    FrontIntakeLower.move(127);    // 前方下層正轉
     MiddleIntakeUpper.move(-127); // 中間上層反轉
     MiddleIntakeLower.move(0);    // 中間下層停止
     Conveyor.move(-127);             // 輸送帶停止
